@@ -18,6 +18,10 @@ return {
 		options = {
 		    disable_when_touch = true,
 		    pair_spaces = true,
+		    disable_command_mode = true,
+		},
+		keys = {
+		    ["'"] = { close = false }
 		},
 	    })
 	end
@@ -49,6 +53,17 @@ return {
 		    ["html"] = {
 			enable_close = true,
 		    },
+		},
+	    })
+	end
+    },
+    {
+	"uga-rosa/ccc.nvim",
+	config = function()
+	    require('ccc').setup({
+		lazy = false,
+		cmd = {
+		    "CccPick",
 		},
 	    })
 	end

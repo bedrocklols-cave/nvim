@@ -16,8 +16,7 @@ vim.keymap.set("n", "<leader>M", "<cmd>MasonUpdate<CR>")
 
 vim.keymap.set("n", "<leader>lg", "<cmd>LazyGit<cr>")
 vim.keymap.set("n", "<leader>t", "<cmd>term<cr>")
-vim.keymap.set("n", "<leader>ll", "<cmd>$<cr>")
-vim.keymap.set("n", "<leader>fl", "<cmd>1<cr>")
+vim.keymap.set("n", "<C-n>", "<cmd>CccPick<cr>")
 
 vim.keymap.set("n", "<leader>rs", "<cmd>AutoSession restore<CR>")
 
