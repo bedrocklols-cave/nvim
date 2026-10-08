@@ -6,76 +6,80 @@ return {
     -- 'tpope/vim-fugitive',
     --    },
     {
-	'brenoprata10/nvim-highlight-colors',
-	config = function()
-	    require('nvim-highlight-colors').setup({})
-	end
+        'brenoprata10/nvim-highlight-colors',
+        config = function()
+            require('nvim-highlight-colors').setup({})
+        end
     },
     {
-	'm4xshen/autoclose.nvim',
-	config = function()
-	    require("autoclose").setup({
-		options = {
-		    disable_when_touch = true,
-		    pair_spaces = true,
-		    disable_command_mode = true,
-		},
-		keys = {
-		    ["'"] = { close = false }
-		},
-	    })
-	end
+        'm4xshen/autoclose.nvim',
+        config = function()
+            require("autoclose").setup({
+                options = {
+                    disable_when_touch = true,
+                    pair_spaces = true,
+                    disable_command_mode = true,
+                },
+                keys = {
+                    ["'"] = { close = false }
+                },
+            })
+        end
     },
     {
-	"kdheepak/lazygit.nvim",
-	lazy = true,
-	cmd = {
-	    "LazyGit",
-	    "LazyGitConfig",
-	    "LazyGitCurrentFile",
-	    "LazyGitFilter",
-	    "LazyGitFilterCurrentFile",
-	},
-	dependencies = {
-	    "nvim-lua/plenary.nvim",
-	},
+        "kdheepak/lazygit.nvim",
+        lazy = true,
+        cmd = {
+            "LazyGit",
+            "LazyGitConfig",
+            "LazyGitCurrentFile",
+            "LazyGitFilter",
+            "LazyGitFilterCurrentFile",
+        },
+        dependencies = {
+            "nvim-lua/plenary.nvim",
+        },
     },
     {
-	"windwp/nvim-ts-autotag",
-	config = function()
-	    require('nvim-ts-autotag').setup({
-		opts = {
-		    enable_close = true,
-		    enable_rename = true,
-		    enable_close_on_slash = true,
-		},
-		per_filetype = {
-		    ["html"] = {
-			enable_close = true,
-		    },
-		},
-	    })
-	end
+        "windwp/nvim-ts-autotag",
+        config = function()
+            require('nvim-ts-autotag').setup({
+                opts = {
+                    enable_close = true,
+                    enable_rename = true,
+                    enable_close_on_slash = true,
+                },
+                per_filetype = {
+                    ["html"] = {
+                        enable_close = true,
+                    },
+                },
+            })
+        end
     },
+    --    {
+    -- "uga-rosa/ccc.nvim",
+    -- config = function()
+    --     require('ccc').setup({
+    -- 	lazy = false,
+    -- 	cmd = {
+    -- 	    "CccPick",
+    -- 	},
+    --     })
+    -- end
+    --    },
     {
-	"uga-rosa/ccc.nvim",
-	config = function()
-	    require('ccc').setup({
-		lazy = false,
-		cmd = {
-		    "CccPick",
-		},
-	    })
-	end
+        "lukas-reineke/indent-blankline.nvim",
+        main = "ibl",
+        ---@module "ibl"
+        ---@type ibl.config
+        opts = {},
+        config = function()
+            require("ibl").setup()
+        end
     },
-    {
-	"lukas-reineke/indent-blankline.nvim",
-	main = "ibl",
-	---@module "ibl"
-	---@type ibl.config
-	opts = {},
-	config = function()
-	    require("ibl").setup()
-	end
-    },
+    -- return {
+    --     "ThePrimeagen/harpoon",
+    --     dependencies = { "nvim-lua/plenary.nvim" }
+    -- }
 }
