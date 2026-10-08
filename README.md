@@ -10,13 +10,11 @@ It's designed for coding JS, CSS, HTML, Python, and Lua files. You can add more 
 - An LSP for autocompletion and diagnostics
 - Automatic session restore
 - Auto closing brackets, quotes, HTML tags, etc.
-- Fuzzy finder to find files
-- Treesitter for parsing code
+- Fuzzy finder to access several buffers, find files, and more.
 - LazyGit to manage repository inside Neovim
-- Harpoon to add and access files anytime
 
 ## Installation
 
-Clone this repository by clicking the green button labeled "Code" above the page. You can either download the zip file, or copy the link and use `git clone <repository link>` in your terminal.
+Clone this repository by clicking the green button labeled "Code" above the page. Then, download the source code and put the config files in your `~/.config/nvim` directory.
 
-Since it's minimal, you are free to expand upon the foundation yourself. Happy typing!
+You are free to expand upon the foundation yourself. Happy coding!
