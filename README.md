@@ -1,6 +1,6 @@
 # Neovim configuration
 
-This is my minimal Neovim configuration. It uses lazy.nvim as its plugin manager.
+This is my Neovim configuration. It uses lazy.nvim as its plugin manager.
 
 It's designed for coding JS, CSS, HTML, Python, and Lua files. You can add more languages by editing mason.lua, nvim-treesitter.lua, and options.lua files.
 
