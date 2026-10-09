@@ -78,8 +78,8 @@ return {
             require("ibl").setup()
         end
     },
-    -- return {
+    -- {
     --     "ThePrimeagen/harpoon",
     --     dependencies = { "nvim-lua/plenary.nvim" }
-    -- }
+    -- },
 }
