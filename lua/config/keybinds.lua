@@ -20,7 +20,7 @@ vim.keymap.set("n", "<leader>L", "<cmd>Lazy<CR>")
 vim.keymap.set("n", "<leader>m", "<cmd>Mason<CR>")
 vim.keymap.set("n", "<leader>M", "<cmd>MasonUpdate<CR>")
 vim.keymap.set("n", "<leader>lg", "<cmd>LazyGit<cr>")
-vim.keymap.set("n", "<leader>t", "<cmd>term<cr>")
+vim.keymap.set("n", "<leader>t", "<cmd>term<cr>i")
 -- vim.keymap.set("n", "<C-n>", "<cmd>CccPick<cr>")
 
 -- autosession restore keybind
@@ -41,6 +41,9 @@ vim.keymap.set("n", "<C-k>", "<C-w>+")
 vim.keymap.set("n", "<C-j>", "<C-w>-")
 vim.keymap.set("n", "<C-l>", "<C-w>>")
 vim.keymap.set("n", "<C-h>", "<C-w><")
+
+-- miscellaneous
+vim.keymap.set("n", "<A-0>", "$")
 
 -- vim.keymap.set("n", "<leader>ha", function()
 --     require("harpoon.mark").add_file()
