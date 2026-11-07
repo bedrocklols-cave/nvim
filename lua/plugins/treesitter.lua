@@ -8,10 +8,10 @@ return {
             install_dir = vim.fn.stdpath('data') .. '/site'
         }
 
-        require('nvim-treesitter').install { 'lua', 'javascript', 'python', 'html', 'css', 'typescript', 'bash', 'json' }
+        require('nvim-treesitter').install { 'lua', 'javascript', 'python', 'html', 'css', 'typescript', 'bash', 'json', 'asm' }
 
         vim.api.nvim_create_autocmd('FileType', {
-            pattern = { 'lua', 'javascript', 'python', 'html', 'css', 'typescript', 'bash', 'json' },
+            pattern = { 'lua', 'javascript', 'python', 'html', 'css', 'typescript', 'bash', 'json', 'asm' },
             callback = function()
 	            vim.treesitter.start()
 	            -- vim.wo.foldexpr = 'v:lua.vim.treesitter.foldexpr()'
@@ -29,5 +29,6 @@ return {
         vim.lsp.enable('bashls');
         vim.lsp.enable('jsonls');
         vim.lsp.enable('pylsp');
+        vim.lsp.enable('asm_lsp');
     end
 }
